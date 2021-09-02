@@ -40,7 +40,7 @@ function addtodo(event){
 
     //appending delete and completed elements to list_div
 
-    /* PROBLEM 2 
+    /* PROBLEM 2 -SOLVED  ( just add flex )
         i  appended delete and complete buttons to list_div( which div that contains 
             li tag, delete button, mark button
             they are not in same line

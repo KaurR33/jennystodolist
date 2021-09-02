@@ -37,6 +37,7 @@ i toggled classes on line 59 in app.js and it's supposed to happen in transition
 but no! it's not working!
 */
 .todo_div{
+    display: flex;
     color: black;
     font-size: 15px;
     background-color: pink;
@@ -60,6 +61,6 @@ but no! it's not working!
 }
 .falling{
     color: blue;
-    transition: translateY(40px) rotateZ(60deg);
+    transition: width 30px;
     transition-duration: 3s;
 }
