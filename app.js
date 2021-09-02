@@ -58,7 +58,9 @@ function addtodo(event){
 function delete_list(e){
     var target = e.target;
     if(target.classList[0]==='delete_button'){
-        target.parentElement.remove();
+      //  target.parentElement.remove();
+        var targetlist = target.parentElement;
+        targetlist.classList.add('falling');
     }
     if(target.classList[0]==='complete'){
         var parent_div = target.parentElement;

@@ -40,7 +40,8 @@ but no! it's not working!
     color: black;
     font-size: 15px;
     background-color: pink;
-    transition-duration:  2s;
+    
+    border: 2px solid green;
 }
 .list_content {
     list-style: none;;
@@ -56,4 +57,9 @@ but no! it's not working!
     opacity: 0.5;
     font-size: 17px;
     color:red;
+}
+.falling{
+    color: blue;
+    transition: translateY(40px) rotateZ(60deg);
+    transition-duration: 3s;
 }
