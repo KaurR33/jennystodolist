@@ -21,3 +21,28 @@ header,form{
     justify-content: center;
     align-items: center;
 }
+.todo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo_div{
+    color: black;
+    font-size: 15px;
+    background-color: pink;
+}
+.list_content {
+    list-style: none;;
+}
+.li_element {
+    flex: 1;
+}
+.fa-check-square, .fa-trash-alt{
+    pointer-events: none;
+}
+.completed_deco {
+    text-decoration: line-through;
+    opacity: 0.5;
+    font-size: 17px;
+    color:red;
+}
