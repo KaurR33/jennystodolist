@@ -37,11 +37,10 @@ i toggled classes on line 59 in app.js and it's supposed to happen in transition
 but no! it's not working!
 */
 .todo_div{
-    display: flex;
+    display: flex; /* solution to problem no 2  added flex  */ 
     color: black;
     font-size: 15px;
     background-color: pink;
-    
     border: 2px solid green;
 }
 .list_content {
