@@ -35,11 +35,17 @@ function addtodo(event){
     completed_btn.innerHTML = '<i class="far fa-check-square"></i>';
     completed_btn.classList.add('complete');
 
-    //adding icons to delete and completed
+   
    
 
     //appending delete and completed elements to list_div
-    
+
+    /* PROBLEM 2 
+        i  appended delete and complete buttons to list_div( which div that contains 
+            li tag, delete button, mark button
+            they are not in same line
+            )
+    */
     list_div.appendChild(deleted_btn);
     list_div.appendChild(completed_btn);
 

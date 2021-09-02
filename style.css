@@ -26,6 +26,16 @@ header,form{
     align-items: center;
     justify-content: center;
 }
+
+/* 
+PROBLEM 1 
+
+why doesn't this transition property not working ?
+todo_div belongs to a div we created which contains <li> <delte button and complete button
+
+i toggled classes on line 59 in app.js and it's supposed to happen in transition fo 2s
+but no! it's not working!
+*/
 .todo_div{
     color: black;
     font-size: 15px;
