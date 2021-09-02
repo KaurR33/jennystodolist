@@ -30,6 +30,7 @@ header,form{
     color: black;
     font-size: 15px;
     background-color: pink;
+    transition-duration:  2s;
 }
 .list_content {
     list-style: none;;
