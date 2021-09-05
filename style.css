@@ -42,13 +42,13 @@ but no! it's not working!
     font-size: 15px;
     background-color: pink;
     border: 2px solid green;
+    width: 300px;
 }
 .list_content {
     list-style: none;;
+    flex : 1;
 }
-.li_element {
-    flex: 1;
-}
+
 .fa-check-square, .fa-trash-alt{
     pointer-events: none;
 }
@@ -60,6 +60,12 @@ but no! it's not working!
 }
 .falling{
     color: blue;
-    transition: width 30px;
-    transition-duration: 3s;
+    transform: translateY(100px) rotateZ(50deg);
+    opacity: 0.6;
+    transition-duration: 1.5s;
 }
+.filter_list{
+    position: relative;
+    margin-left: 15px;
+}
+

@@ -1,12 +1,13 @@
 var ul_list = document.querySelector('.list_ul');
 var todo_button = document.querySelector('.todo_button');
 var todo_input = document.querySelector('.todo_input');
-
+var filter_list = document.querySelector('.filter_list');
 
 
 // event listeners
 todo_button.addEventListener("click",addtodo);
 ul_list.addEventListener("click", delete_list);
+filter_list.addEventListener("click", filterthelist);
 
 
 function addtodo(event){
@@ -61,10 +62,20 @@ function delete_list(e){
       //  target.parentElement.remove();
         var targetlist = target.parentElement;
         targetlist.classList.add('falling');
+        addEventListener("transitionend", function(){
+            target.parentElement.remove();
+        });
     }
     if(target.classList[0]==='complete'){
         var parent_div = target.parentElement;
         parent_div.classList.toggle('completed_deco');
     }
+}
+
+function filterthelist(e){
+    event.preventDefault();
+    var todos = filter_list.childNodes;
+    console.log(todos);  
+    
 }
 
