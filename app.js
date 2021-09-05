@@ -73,9 +73,24 @@ function delete_list(e){
 }
 
 function filterthelist(e){
-    event.preventDefault();
-    var todos = filter_list.childNodes;
-    console.log(todos);  
+   e.preventDefault();
+    var todos = todo_input.childNodes;
+    console.log(todos);
+    todos.forEach(function(childnodeitem){
+        console.log(childnodeitem);
+
+        /*
+            switch(e.target.value){
+            case "all":
+                childnodeitem.style.display = "flex";
+                break;
+            case "complete":
+                childnodeitem.style.display = "none"
+                break;
+        } 
+        */
+    });
+           
     
 }
 
