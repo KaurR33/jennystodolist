@@ -7,7 +7,7 @@ var filter_list = document.querySelector('.filter_list');
 // event listeners
 todo_button.addEventListener("click",addtodo);
 ul_list.addEventListener("click", delete_list);
-filter_list.addEventListener("click", filterthelist);
+filter_list.addEventListener("change", filterthelist);
 
 
 function addtodo(event){
@@ -16,13 +16,14 @@ function addtodo(event){
     var list_div = document.createElement('div');
     list_div.classList.add('todo_div');
     var li_element = document.createElement('li');
+    li_element.classList.add('list_content');
 
     // appending
-    ul_list.appendChild(list_div); //appending to the ul
+     //appending to the ul
     
 
     //adding list
-    li_element.classList.add('list_content');
+    
     list_div.appendChild(li_element);
 
     li_element.innerText = todo_input.value;
@@ -51,6 +52,7 @@ function addtodo(event){
     list_div.appendChild(completed_btn);
 
 
+    ul_list.appendChild(list_div);
     //clear input value
     todo_input.value = "";
 
@@ -73,22 +75,14 @@ function delete_list(e){
 }
 
 function filterthelist(e){
-   e.preventDefault();
-    var todos = todo_input.childNodes;
-    console.log(todos);
+ 
+    var todos = ul_list.childNodes;
+
     todos.forEach(function(childnodeitem){
         console.log(childnodeitem);
-
-        /*
-            switch(e.target.value){
-            case "all":
-                childnodeitem.style.display = "flex";
-                break;
-            case "complete":
-                childnodeitem.style.display = "none"
-                break;
-        } 
-        */
+        console.log("inside");
+            console.log(childnodeitem.classList.contains("completed_deco"));
+        
     });
            
     
